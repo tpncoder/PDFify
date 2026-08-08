@@ -17,7 +17,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[f"http://localhost:{os.getenv('WEB_PORT')}", "https://pdfify-iby9.onrender.com/"],
+    allow_origins=[f"http://localhost:{os.getenv('WEB_PORT')}", "https://pdfify-iby9.onrender.com"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
